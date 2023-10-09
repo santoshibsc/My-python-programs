@@ -1,0 +1,41 @@
+write a pythonprogram to print all the arithmetic operations
+
+# Python Program to Perform Arithmetic Operators
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+# Addition of two numbers
+sum = a + b 
+
+# Subtraction of two numbers
+difference = a - b
+
+# Multiplication of two numbers
+multiplication = a * b
+
+# Division of two numbers
+division = a / b
+
+# Modulus of two numbers 
+mod = a % b
+
+# Exponent
+exp = a ** b
+
+# Displaying output
+print("The sum of {0} and {1} is {2}" .format(a, b, sum))
+print("The difference of {0} and {1} is {2}" .format(a, b, difference))
+print("The multiplication of {0} and {1} is {2}" .format(a, b, multiplication))
+print("The division of {0} and {1} is {2}" .format(a, b, division))
+print("The modulus of {0} and {1} is {2}" .format(a, b, mod))
+print("The exponent value of {0} and {1} is {2}" .format(a, b, exp))
+
+
+outpu:- Enter first number: 10
+Enter second number: 2
+The sum of 10.0 and 2.0 is 12.0
+The difference of 10.0 and 2.0 is 8.0
+The multiplication of 10.0 and 2.0 is 20.0
+The division of 10.0 and 2.0 is 5.0
+The modulus of 10.0 and 2.0 is 0.0
+The exponent value of 10.0 and 2.0 is 100.0
