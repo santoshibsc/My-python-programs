@@ -1,0 +1,11 @@
+ write a program to print your personal self data
+    (name,fname,mname,study,habbits,interests,color)
+
+
+
+def personal_details():
+    name, age = "santoshi", 19
+    address = "visakhapatnam, pm.palem, India"
+    print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+
+personal_details()
