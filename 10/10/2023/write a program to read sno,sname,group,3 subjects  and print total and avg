@@ -1,0 +1,19 @@
+ write a program to read sno,sname,group,3 subjects
+    and print total and avg
+
+
+//To read the marks of three Subjects and Display the Total, Avg and Class
+a = int(input("Enter the marks of first subject: "))
+b = int(input("Enter the marks of second subject: "))
+c = int(input("Enter the marks of third subject: "))
+total = a+b+c
+avg = total/3
+print("Total marks: ",total)
+print("Average marks: ",avg)
+
+Output:-
+Enter the marks of first subject:84
+Enter the marks of second subject:90
+Enter the marks of third subject:75
+Total marks: 249
+Average marks: 83.0
