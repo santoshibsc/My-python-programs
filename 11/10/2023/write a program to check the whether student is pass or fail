@@ -1,0 +1,38 @@
+write a program to check the whether student is pass or fail
+'''
+sno,sname,group,s1,s2,s3
+pass constraint,marks should greater than or equal to 40,
+if the condition is true,then print pass otherwise print fail
+s1>=40
+s2>=40
+s3>=40
+'''
+
+code:-
+
+print('Enter marks obtained in 3 subjects')
+s1=int(input())
+s2=int(input())
+s3=int(input())
+avg=(s1+s2+s3)/3
+
+if s1>40 and s2>40:
+    print('Pass')
+elif s2>40 and s3>40:
+    print('Pass')
+elif s3>40 and s1>40:
+    print('Pass')
+elif avg>40:
+    print('Pass')
+else:
+    print('Fail')
+
+
+
+ output:-
+
+Enter marks obtained in 3 subjects
+56
+34
+45
+Pass
