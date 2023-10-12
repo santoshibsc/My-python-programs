@@ -1,0 +1,15 @@
+Write a program to print given number is positive or not
+
+num = float(input("Input a number: "))
+if num > 0:
+   print("It is positive number")
+elif num == 0:
+   print("It is Zero")
+else:
+   print("It is a negative number")
+
+
+output:-
+
+Input a number: 150                                                
+It is positive number 
