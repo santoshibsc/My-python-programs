@@ -1,0 +1,47 @@
+Write a program to generate students results(sno,sname, group,S1,S2,S3)
+Calculate total and avg.
+If avg>=90,O-Grade
+If avg>=80,A-Grade
+If avg>=70,B-Grade
+If avg>=60,C-Grade
+If avg>=50,D-Grade
+Otherwise Print Pass
+
+
+code: 
+
+sno=int(input('Enter serial number of the student:'))
+sname=input('Enter Name of the student:')
+group=input('Enter student group:')
+s1=int(input('Enter maths marks:'))
+s2=int(input('Enter phy marks:'))
+s3=int(input('Enter cs marks:'))
+total=s1+s2+s3
+avg=total//3
+print('Total marks:',total)
+print('Average of the given marks:',avg)
+if avg>=90:
+    print('O Grade')
+elif avg>=80:
+    print('A Grade')
+elif avg>=70:
+    print('B Grade')
+elif avg>=60:
+    print('C Grade')
+elif avg>=50:
+    print('D Grade')
+else:
+    print('Pass')
+
+
+output: 
+Enter serial number of the student:1
+Enter Name of the student:santoshi
+Enter student group:mscs
+Enter maths marks:92
+Enter phy marks:94
+Enter cs marks:98
+Total marks: 284
+Average of the given marks: 94
+O Grade
+> 
