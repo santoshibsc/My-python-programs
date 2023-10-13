@@ -1,0 +1,52 @@
+ ''' write a  python program to prepare shopping mall bill'''
+
+
+geans=2000
+kurthi=1000
+saree=4000
+print('*****Welcome to python Shopping mall****')
+cname=input('Enter customer name:')
+cphno=input('Enter Phone number:')
+gq=int(input('Enter no of geans:'))
+kq=int(input('Enter no of Kurthis:'))
+sq=int(input('Enter no of Sarees:'))
+pc=input('Enter promo code:')
+bill=(geans*gq)+(kurthi*kq)+(saree*sq)
+if pc=='DIWALI' or pc=='diwali':
+    disc=bill*50/100
+elif pc=='SUNDAY' or pc=='sunday':
+    disc==bill*40/100
+elif bill>=4000:
+    disc=bill*20/100
+elif bill>=2000:
+    disc=bill*10/100
+elif bill>=1000:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*12/100
+obill=tbill+gst
+print('Name of the customer:',cname)
+print('Phone number:',cphno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('**Thank you!Visit Again***')
+
+output-
+*****Welcome to python Shopping mall****
+Enter customer name:santoshi
+Enter Phone number:1234567897
+Enter no of geans:1
+Enter no of Kurthis:2
+Enter no of Sarees:0
+Enter promo code:diwali
+Name of the customer: santoshi
+Phone number: 1234567897
+bill: 4000
+Discount: 800.0
+Gst 12%: 384.0
+Bill to be paid: 3584.0
+**Thank you!Visit Again***
