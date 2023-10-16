@@ -1,0 +1,14 @@
+ write program to print the following series
+    5   10   15   20   25  30 ------n
+
+code:-
+
+n=int(input())
+i=5
+while(i<=n):
+    print(i,end=' ')
+    i=i+5
+output-
+60
+5  10  15  20  25  30   35  40  45  50  55  60
+
