@@ -1,0 +1,11 @@
+
+Write a program to print squares upto given number.
+
+
+x = int(input( “ Enter a number : “)) 
+result = x**2 
+print(result) 
+
+output:-
+Enter a number : 4 
+16 
