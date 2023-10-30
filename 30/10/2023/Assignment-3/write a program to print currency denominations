@@ -1,0 +1,22 @@
+notes = (2000,500,200,100,50,20,10,5,2,1)
+
+amount = int(input("Enter Amount to be paid : "))
+
+for C in notes:
+    count = amount//C
+    print("Note Value : ", C,'\tnumber of notes ',count)
+    amount = amount%C
+
+Output:-
+Enter Amount to be paid : 34521
+Note Value :  2000	number of notes  17
+Note Value :  500 	number of notes  1
+Note Value :  200 	number of notes  0
+Note Value :  100 	number of notes  0
+Note Value :  50 	number of notes  0
+Note Value :  20 	number of notes  1
+Note Value :  10 	number of notes  0
+Note Value :  5 	number of notes  0
+Note Value :  2 	number of notes  0
+Note Value :  1 	number of notes  1
+
