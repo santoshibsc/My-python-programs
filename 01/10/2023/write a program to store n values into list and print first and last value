@@ -1,0 +1,13 @@
+  write a program to store n values into list and print first and last value using while loop
+
+  
+n = int(input("Enter the number of values: "))
+my_list = []
+for i in range(n):
+    value = int(input("Enter a value: "))
+    my_list.append(value)
+
+if len(my_list) >= 1:
+    print("First value:", my_list[0])
+if len(my_list) >= 1:
+    print("Last value:", my_list[-1])
