@@ -1,0 +1,9 @@
+find the second smallest number in the list using python
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))[:n]
+    max_val = max(arr)
+    while max(arr) == max_val:
+        arr.remove(max_val)
+    print(max(arr))
