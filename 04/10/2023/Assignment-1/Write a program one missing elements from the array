@@ -1,0 +1,9 @@
+Write a program to find missing elements from the array:-
+
+Code:-
+n=int(input())
+l=list(map(int,input().split()))
+maxx=max(l)
+for i in range(1,maxx+1):
+    if i not in l:
+    print(i,end=' ')
