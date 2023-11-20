@@ -1,0 +1,23 @@
+wap to add two lists and print minimum value from the resultant list in python.
+    ex:
+        input:
+        4
+        5 6 7 9
+        2 8 3 4
+        output:
+        7(7,14,10,13)
+
+        code:-
+
+        n=int(inpu())
+        l=[]
+        s=input().split()
+        for i in s:
+            l.append(int(i))
+        for i in range (o,n):
+            count=10
+            for j in range(0,n):
+                if l[i]==l[j]:
+                    count=count+1
+                if count>1:
+                    print(l[i],end='')
