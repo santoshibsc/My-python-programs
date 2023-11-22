@@ -1,0 +1,33 @@
+wap to print 1 to n armstrong numbers using list comprehension
+
+input:
+400
+output:1 153 371
+
+code:-1
+
+def is_armstrong(num):
+    num_str = str(num)
+    return num == sum(int(digit) ** len(num_str) for digit in num_str)
+
+def print_armstrong_numbers(n):
+    armstrong_numbers = [num for num in range(1, n + 1) if is_armstrong(num)]
+    print(*armstrong_numbers)
+
+n = int(input())
+print_armstrong_numbers(n)
+
+
+code:-2:-
+
+n=int(input()) 
+  
+for num in range(1, n+1):  
+    sum = 0 
+    temp = num  
+    while temp > 0:  
+        digit = temp % 10  
+        sum += digit ** 3  
+        temp //= 10  
+    if num == sum:  
+       print(num) 
