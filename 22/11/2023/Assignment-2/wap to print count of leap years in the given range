@@ -1,0 +1,9 @@
+wap to print count of leap years in the given range
+input:
+2000 2010
+output:
+3
+
+n=int(input())
+l=[i for i in range(n+1) if i%2!=0]
+print(l)
