@@ -1,0 +1,81 @@
+wap to prepare overall grade application based on 6 semesters
+    take 6 semester marks
+    sem1:8
+    sem2:9
+    sem3:8
+    sem4:9
+    sem5:9
+    sem6:10
+
+    cgpa:8.83    Result
+    10-O
+    9-A+
+    8-A
+    7-B
+    6-C
+    5-D
+    4-P
+    F
+
+    #wap to prepare overall grade application based on 6 semesters
+
+def myresult():
+    s1=int(sem1marks.get())
+    s2=int(sem2marks.get())
+    s3=int(sem3marks.get())
+    s4=int(sem4marks.get())
+    s5=int(sem5marks.get())
+    s6=int(sem6marks.get())
+    total=s1+s2+s3+s4+s5+s6
+    avg=total//6
+    if avg>=10:
+        gr="o"
+    elif avg>=9:
+        gr="A+"
+    elif avg>=8:
+        gr="A"
+    elif avg>=7:
+        gr="B"
+    elif avg>=6:
+        gr="C"
+    elif avg>=5:
+        gr="D"
+    elif avg>=4:
+        gr="P"
+    else:
+        gr="F"
+    s="Total:"+str(total)+"Grade:"+gr
+    res.config(text=s)
+
+
+from tkinter import *
+result=Tk()
+sem1=Label(result,text="Enter Sem1 Marks:")
+sem1marks=Entry(result)
+sem2=Label(result,text="Enter Sem2 Marks:")
+sem2marks=Entry(result)
+sem3=Label(result,text="Enter Sem3 Marks:")
+sem3marks=Entry(result)
+sem4=Label(result,text="Enter Sem4 Marks:")
+sem4marks=Entry(result)
+sem5=Label(result,text="Enter Sem5 Marks:")
+sem5marks=Entry(result)
+sem6=Label(result,text="Enter Sem6 Marks:")
+sem6marks=Entry(result)
+b1=Button(result,text="Submit",command=myresult)
+res=Label(result,text="?")
+sem1.grid(row=0,column=0)
+sem1marks.grid(row=0,column=1)
+sem2.grid(row=1,column=0)
+sem2marks.grid(row=1,column=1)
+sem3.grid(row=2,column=0)
+sem3marks.grid(row=2,column=1)
+sem4.grid(row=3,column=0)
+sem4marks.grid(row=3,column=1)
+sem5.grid(row=4,column=0)
+sem5marks.grid(row=4,column=1)
+sem6.grid(row=5,column=0)
+sem6marks.grid(row=5,column=1)
+b1.grid(row=6,column=0)
+res.grid(row=6,column=1)
+result.mainloop()
