@@ -1,0 +1,24 @@
+ ass3:
+    wap to print elements in order within specified interval in descending order
+    
+input:
+    8
+    12 45 85 96 2 0 4 9
+    3 6
+output:
+    0  1  2  3   4  5  6   7
+    12 45 85 96  2  0  4   9
+    12 45 85 96  4  2 0  9
+
+code;-
+
+l=[4,7,2,44,234,22,1]
+l.sort(reverse=True)
+print(l)
+
+n=int(input())
+l=list(map(int,input().split()))
+s=set(l)
+l=list(s)
+l.sort(reverse=True)
+print(l[1])
