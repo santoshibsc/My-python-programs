@@ -1,0 +1,14 @@
+Hackkerrank solution of left rotation
+
+code:-
+n=int(input())
+l=list(map(int,input().split()))
+r=int(input())
+for i in range(1,r+1):#no of rotations
+    first=l[0]#2
+    for j in range(0,n-1):#0 1 2 3
+        l[j]=l[j+1]
+    l[n-1]=first
+    
+for i in l:
+    print(i,end=' ')
