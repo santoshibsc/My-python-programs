@@ -1,0 +1,24 @@
+ass2:wap program to print maximum of each column from the matrix
+ex:
+input:
+3
+00   01 02  
+ 12  14 10
+
+ 8  7  6
+   max
+ 4  9  8
+ output:
+ 12 14 10
+
+ n=int(input())
+A=[]
+for i in range(n):
+    l=list(map(int,input().split()))
+    A.append(l)
+for i in range(0,n):
+    maxx=A[j][0]
+    for j in range(0,n):
+        if A[i][j]>maxx:
+            maxx=A[j][i]
+    print(maxx,end=' ')
