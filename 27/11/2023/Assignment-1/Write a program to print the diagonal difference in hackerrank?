@@ -1,0 +1,15 @@
+Write a program to print the diagonal difference in hackerrank?
+
+    n=int(input())
+    mat=[]
+    for i in range(0,n):
+        l=list(map(int,input().split()))
+        mat.append(1)
+    pd=0 
+    sd=0
+    for i in range(0,n):
+        if i==j:
+            pd=pd+mat[i][j]
+        if i+j==n-1:
+            sd=sd+mat[i][j]
+    print(abs(pd-sd))
