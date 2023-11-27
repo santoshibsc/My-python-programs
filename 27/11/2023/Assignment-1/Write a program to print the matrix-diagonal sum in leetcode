@@ -1,0 +1,13 @@
+Write a program to print the matrix-diagonal sum in leetcode
+
+        n=len(mat)
+        Pd=0
+        Sd=0
+        for i in range(0,n):
+            for j in range(0,n):
+                if i==j:
+                    Pd=Pd+mat[i][j]
+                elif i+j==n-1:
+                    Sd=Sd+mat[i][j]
+            return Pd+Sd
+ 
