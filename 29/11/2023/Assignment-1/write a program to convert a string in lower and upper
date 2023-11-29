@@ -1,0 +1,12 @@
+ write a program to convert a string in lower and upper
+    ex:
+        Input:
+        AditYa
+    output:
+        aDITyA
+
+
+code:-
+
+ us=input()
+   print(us.swapcase())
