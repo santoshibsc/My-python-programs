@@ -1,0 +1,35 @@
+  write a program to identify the file format
+    input:hi.jpeg
+    output:
+        photo document
+    input:
+        hello.doc
+    output:
+        word document
+    input:
+        aditya.xls
+    output:
+        Excel document
+    input:
+        hi.ppt
+    output:
+        powerpoint document
+    input:
+        jj.dfd
+    output:
+        invalid document
+
+
+#wap to identify the file format
+
+file=input()
+if file.endswith('.jpeg'):
+    print('Photo document')
+elif file.endswith('.doc'):
+    print('Word document')
+elif file.endswith('.xls'):
+    print('Excel document')
+elif file.endswith('.ppt'):
+    print('Powerpoint document')
+elif file.endswith('.dfd'):
+    print('Invalid document')
