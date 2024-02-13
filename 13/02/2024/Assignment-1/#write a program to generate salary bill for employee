@@ -1,0 +1,50 @@
+#write a program to generate salary bill for employee
+emno,empname,designation,basic,hra,da,ta
+print empno,empname,designation,basic,hra,da,ta,netsalary,tax
+where netsalary=basic+da+ta+hra
+where tax is depending on net salary
+if netsalary>50,000->tax is 5%
+if netsalary>35000->tax is 3%
+it netsalary>20000->tax is 1%
+otherwise tax=0
+
+class Employee:
+    
+    def getdata(self,emno,empname,designation,basic,hra,da,ta):
+        self.emno=emno
+        self.empname=empname
+        self.designation=designation
+        self.basic=basic
+        self.hra=hra
+        self.da=da
+        self.ta=ta
+    def putdata(self):
+        print('employee number:',self.emno)
+        print('employee name:',self.empname)
+        print('employee designation:',self.designation)
+        print('maths basic:',self.basic)
+        print('hra:',self.hra)
+        print('da:',self.da)
+        print('ta:',self.ta)
+        netsalary=basic+da+ta+harryprint('netsalary:',netsalary)
+        tax=netsalary
+        prin('tax:',tax)
+        if netsalary>50000:
+            tax=5%
+        elif netsalary>35000:
+            tax=3%
+        elif netsalary>20000:
+            tax=1%
+        else:
+            tax=0
+
+s=Employee()
+emno=int(input('Enter employee no-->'))
+empname=input('Enter employee name-->')
+designation=input('Enter employee designation-->')
+basic=int(input('enter employee basic-->'))
+hra=int(input('enter employee hra-->'))
+da=int(input('enter employee da-->'))
+ta=int(input('enter employee ta-->'))
+s.getdata(emno,empname,designation,basic,hra,da,ta)
+s.putdata()
