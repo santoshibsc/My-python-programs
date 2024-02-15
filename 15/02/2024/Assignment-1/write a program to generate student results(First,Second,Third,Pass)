@@ -1,0 +1,30 @@
+ass1:
+    write a program to generate student results(First,Second,Third,Pass)
+    s=[]
+    n=int(input('Enter number of stdents:'))
+    for i in range(n):
+        l=[]
+        htno=int(input('Enter htno:'))
+        ssname=input('enter name:')
+        s1=int(input('Enter maths:'))
+        s2=int(input('Enter physics:'))
+        s3=int(input('enter cs'))
+        l.append(sname)
+        l.append(s1)
+        l.append(s2)
+        l.append(s3)
+        s[htno]=1
+        hno=int(input('Enter htno:'))
+        print('Name of the student:',s[hno][0])
+        total=s[hno][1]+s[hno][2]+s[hno][3]
+        avg=total//3
+        print('total:',total)
+        print('percentages',avg)
+        if avg>80:
+            print('First class')
+        elif avg>70:
+            print('second Class')
+        elif avg>60:
+            print('Third class')
+        else:
+            print('pass')
