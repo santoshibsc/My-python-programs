@@ -1,0 +1,12 @@
+ass4:
+    write a program to print given year is leap year or not
+
+
+    year=int(input('Enter year'))#checking normal years
+if year%4==0 and year%100!=0:
+    print('Given year is leap year')
+elif year%400==0:#checking centuries
+    print('Given year is leap year')
+
+else:
+    print("Given year is not a leap year")
